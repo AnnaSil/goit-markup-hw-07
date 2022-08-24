@@ -1,0 +1,114 @@
+.footer {
+    background: var(--background-color);
+    padding: 60px 0px;
+    &>.container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.adress-container {
+    margin-right: 70px;
+}
+
+.adress__logo {
+    color: var(--white-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.adress__address {
+    font-style: inherit;
+}
+
+.addres__studio {
+    margin-bottom: 9px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__item-link {
+    @include font(null, 14, 1.71, 0.03em);
+    color: var(--address-color);
+    font-style: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    }
+} 
+
+.address__link{
+    @include font(null, 14, 1.71, 0.03em);
+    color: var(--white-color);
+    font-style: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    }
+}
+
+.footer-soc__title {
+    @include font(null, 14, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.footer-soc__link {
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.subscr {
+    margin-left: 93px;
+}
+
+.subscr__title {
+    @include font(700, 14, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.subdcr__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--white-color);
+    outline: none;
+    padding-left: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: var(--blue-color);
+    }
+    &:focus::placeholder {
+        color: var(--blue-color);
+    }
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscr__button {
+    margin-left: 12px;
+    position: relative;
+    text-align: start;
+    padding-left: 29px;
+}
+
+.subscr__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
